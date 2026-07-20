@@ -1,0 +1,55 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# SPDX-FileCopyrightText: 2026 Wakana Kisarazu <wakanakisarazu.work@gmail.com>
+
+
+
+# Build artifacts
+build/
+target/
+
+# Compiled libraries
+*.a
+*.dll
+*.dylib
+*.lib
+*.so
+
+# Compiled objects
+*.o
+*.obj
+
+# Executables
+*.exe
+*.out
+
+# Logs
+*.log
+
+# Temporary files
+*.bak
+*.cache
+*.swp
+*.temp
+*.tmp
+
+# Zig
+.zig-cache/
+zig-out/
+
+# Nim
+nimcache/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# Generated sources
+generated/
+node_modules/

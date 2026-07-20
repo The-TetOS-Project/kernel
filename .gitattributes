@@ -1,0 +1,41 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# SPDX-FileCopyrightText: 2026 Wakana Kisarazu <wakanakisarazu.work@gmail.com>
+
+
+
+# Normalize line endings
+* text=auto eol=lf
+
+# Documentation
+*.md text
+*.txt text
+
+# Source code
+*.c text
+*.cpp text
+*.cxx text
+*.h text
+*.hpp text
+*.hxx text
+*.nim text
+*.zig text
+
+# Scripts
+*.ps1 text eol=crlf
+*.sh text eol=lf
+
+# Binary assets
+*.bin binary
+*.bmp binary
+*.gif binary
+*.ico binary
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.webp binary
+
+# Fonts
+*.otf binary
+*.ttf binary
+*.woff binary
+*.woff2 binary
