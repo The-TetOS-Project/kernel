@@ -1,0 +1,55 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// SPDX-FileCopyrightText: 2026 Wakana Kisarazu <wakanakisarazu.work@gmail.com>
+
+
+
+.{
+    .title = "The TetOS Project: Kasane - Configuration",
+
+    .entries .{
+        .{
+            .kind = .menu,
+            .label = "Build Options",
+            .entries = .{
+                .{
+                    .kind = .choice,
+                    .key = "optimize",
+                    .label = "Optimization mode",
+                    .default = .{ .choice = "Debug" },
+                    .options = .{
+                        .{ .value = "Debug" },
+                        .{ .value = "ReleaseSafe" },
+                        .{ .value = "ReleaseSmall" },
+                        .{ .value = "ReleaseFast" },
+                    },
+
+                    .kind = .choice,
+                    .key = "target",
+                    .label = "Target architecture",
+                    .default = .{ .choice = "x86_64"},
+                    .options = .{
+                        .{ .value = "aarch64" },
+                        .{ .value = "arm" },
+                        .{ .value = "riscv32" },
+                        .{ .value = "riscv64" },
+                        .{ .value = "x86" },
+                        .{ .value = "x86_64" },
+                    },
+
+                    .kind = .bool,
+                    .key = "use_llvm",
+                    .label = "Use LLVM",
+                    .help = "Force usage of the LLVM compiler."
+                    .default = .{ .bool = false} ,
+
+                    .kind = .bool,
+                    .key = "use_lld",
+                    .label = "Use LLD",
+                    .help = "Force usage of the LLD linker."
+                    .depends_on = .{ .key = "use_llvm" }
+                    .default = .{ .bool = false },
+                }
+            }
+        }
+    }
+}

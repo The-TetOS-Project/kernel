@@ -35,6 +35,7 @@ target/
 # Zig
 .zig-cache/
 zig-out/
+zig-pkg
 
 # Nim
 nimcache/

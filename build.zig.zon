@@ -1,0 +1,35 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// SPDX-FileCopyrightText: 2026 Wakana Kisarazu <wakanakisarazu.work@gmail.com>
+
+
+
+.{
+    .fingerprint = 0x8636786a3decbda2,
+    .name = .Kasane,
+    .minimum_zig_version = "0.16.0",
+    .version = "0.0.0",
+
+    .dependencies = .{
+        .limine = .{
+            .url = "https://github.com/Limine-Bootloader/Limine/releases/download/v12.5.0/limine-binary.tar.xz",
+            .hash = "N-V-__8AAHf6VAA89vGK_Q5tM93OL1mE6nlkSDVTxqdGWA2y",
+        },
+
+        .zonfig = .{
+            .url = "git+https://github.com/rdmsr/zonfig?ref=HEAD#ee612592ba79d99da3ddf715ffec1414f72609ca",
+            .hash = "zonfig-0.1.0-V0D8-WQ4AQAW5RNFJPxDNIpI7KB7eGPx0MlzGDM6HFbK",
+        }
+    },
+
+    .paths = .{
+        "assets",
+        "documents",
+        "source",
+        "tests",
+        "build.zig",
+        "build.zig.zon",
+        "config.zig.zon",
+        "LICENSE",
+        "README.md"
+    },
+}
